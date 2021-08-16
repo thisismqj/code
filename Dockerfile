@@ -9,9 +9,6 @@ COPY deploy-container/settings.json .local/share/code-server/User/settings.json
 # Use bash shell
 ENV SHELL=/bin/bash
 
-# Set root password
-RUN sudo echo "root:mqj.2006" | chpasswd
-
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN curl https://rclone.org/install.sh | sudo bash
