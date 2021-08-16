@@ -31,6 +31,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
+RUN sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 
 # -----------
 
