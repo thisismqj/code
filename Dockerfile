@@ -31,8 +31,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
-RUN sudo apt install clang -y
-RUN sudo apt install clangd-8 -y
+RUN sudo apt-get install clang -y
+RUN sudo apt-get install clangd-9 -y
 
 # -----------
 
